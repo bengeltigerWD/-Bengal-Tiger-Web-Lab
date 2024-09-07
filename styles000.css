@@ -1,0 +1,143 @@
+/* Basic CSS for layout and design */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #FF6200;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px;
+}
+
+.nav a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: #575757;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.products {
+    display: flex; /* Use flexbox to align products side by side */
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+    gap: 20px; /* Space between product boxes */
+    justify-content: space-around; /* Space products evenly */
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Arrange items in a column inside the product box */
+    align-items: center; /* Center-align the items */
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 250px;
+    overflow: hidden;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+.carousel img.active {
+    display: block;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-controls button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.product h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product p {
+    color: #333;
+}
+
+.product button {
+    background-color: #FF6200;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: auto; /* Pushes the button to the bottom of the product box */
+}
+
+.product button:hover {
+    background-color: #e55d00;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/* Additional styles for search bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 5px;
+    margin-right: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    background-color: #FF6200;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #e55d00;
+}
